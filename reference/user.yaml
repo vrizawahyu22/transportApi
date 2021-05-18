@@ -7,14 +7,13 @@ info:
 servers:
   - url: 'http://localhost:3000'
 paths:
-  '/users/{userId}':
+  '/users/{userIdDDD}':
     parameters:
       - schema:
-          type: integer
-        name: userId
+          type: string
+        name: userIdDDD
         in: path
         required: true
-        description: Id of an existing user.
     get:
       summary: Get User Info by User ID
       tags: []
